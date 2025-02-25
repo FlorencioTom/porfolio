@@ -7,7 +7,9 @@ const resources = {
       "home": "Home",
       "about": "About",
       "projects": "Projects",
-      "contact": "Contact"
+      "contact": "Contact",
+      "title-intro":"Hello! i'm  Florencio",
+      "availability":"Available to work"
     }
   },
   es: {
@@ -15,7 +17,9 @@ const resources = {
       "home": "Inicio",
       "about": "Sobre mi",
       "projects": "Proyectos",
-      "contact": "Contacto"
+      "contact": "Contacto",
+      "title-intro":"Hola! Soy Florencio",
+      "availability":"Disponible para Trabajar"
     }
   }
 };

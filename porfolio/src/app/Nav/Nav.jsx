@@ -22,7 +22,7 @@ const Nav = () => {
     };
 
     return (
-        <div className="w-full bg-gray-100 py-4">
+        <div className="w-full bg-gray-100 py-4 dark:bg-neutral-900">
             <div className="max-w-screen-xl mx-auto flex items-center justify-between px-4">
                 <div className="flex items-center space-x-6">
                     <i className="fas fa-code text-xl" /> {/* Ícono de código */}

@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   }, [i18n.language]);
   return (
     <I18nextProvider i18n={i18n}>
-    <html lang="en">
+    <html lang="en" class="">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
