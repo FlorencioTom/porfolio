@@ -13,14 +13,14 @@ export default function Home() {
   return (
     <>
       <Nav/>
-      <section className="flex py-4 px-4 max-w-screen-xl mx-auto flex items-center px-4 mt-10">
-        <div className="rounded-full border-2 border-blue-500 p-3"> {/* Aquí agregamos padding para la separación */}
+      <section className="flex justify-center sm:justify-start py-4 px-4 xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mx-auto items-center">
+        <div className="rounded-full border-2 border-blue-500 p-2"> {/* Aquí agregamos padding para la separación */}
           <motion.img src="/florencio.jpg" alt="Florencio" width={90} className="rounded-full object-cover shadow-lg" style={{ cursor: "pointer", height:'auto' }}
                 animate={shake ? { x: [0, -5, 5, -5, 5, 0] } : {}} transition={{ duration: 0.3, repeat: 1 }} 
                 onClick={() => { setShake(true); setTimeout(() => setShake(false), 300); }}/>
         </div>
         <div className="flex flex-col items-start justify-start text-left py-4">
-          <h1 className="text-3xl font-semibold mb-3 ml-8">{t('title-intro')}</h1>
+          <h1 className="dark:text-white text-3xl font-semibold mb-3 ml-8">{t('title-intro')}</h1>
           <a href="https://www.linkedin.com/in/florencio-tom-4496a3198/" target="_blank" rel="noopener" 
             className="flex items-center justify-start transition transform hover:scale-105 ml-8"> 
             <div className="flex items-center"> 
