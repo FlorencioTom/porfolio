@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
   }, [i18n.language]);
   return (
     <I18nextProvider i18n={i18n}>
-      <html lang="en">
+      <html lang="en" className="">
         <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
           {/* Solo se muestra en modo oscuro */}
           <div className="hidden dark:block absolute top-0 z-[-2] h-screen w-screen 

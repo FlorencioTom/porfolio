@@ -29,7 +29,7 @@ export const theme = {
     }
   },
   link: {
-    base: "hover:bg-transparent block rounded py-2 pl-3 pr-4 md:p-0 cursor-pointer text-gray-800 dark:hover:text-yellow-500 hover:text-cyan-700 dark:hover:text-yellow-500 transition-all duration-300 border-b-2 border-cyan-500",
+    base: "hover:bg-transparent block py-2 pl-3 pr-4 md:p-0 cursor-pointer text-gray-800 dark:hover:text-yellow-500 hover:text-cyan-700 dark:hover:text-yellow-500 transition-all duration-300 border-b-2 border-cyan-500",
     active: {
       on: "bg-cyan-700 text-white dark:text-white md:bg-transparent md:text-cyan-700",
       off: "",
