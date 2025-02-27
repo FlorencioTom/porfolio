@@ -11,8 +11,6 @@ const Nav = () => {
     const { t, i18n } = useTranslation();
     const [flag, setFlag] = useState(0);
     const [darkMode, setDarkMode] = useState(false);
-    const [isOpen, setIsOpen] = useState(false);
-    const [isMD, setIsMD] = useState(false);
 
     const toggleLanguage = () => {
         i18n.changeLanguage(flag === 0 ? 'es' : 'en');
@@ -34,7 +32,7 @@ const Nav = () => {
       <Navbar fluid rounded className={theme.root.base}>
         <Navbar.Brand>
           <Image 
-            className="mr-5 dark:text-white"
+            className="mr-5 dark:text-white transition-transform duration-200 transform hover:scale-110"
             src={flag === 0 ? "/es.svg" : "/gb.svg"} 
             alt="Flag" 
             width={30} 
@@ -43,7 +41,7 @@ const Nav = () => {
             style={{ cursor: "pointer" }}
           />
           <i 
-            className={`fa-regular ${darkMode ? "fa-sun" : "fa-moon"} text-xl text-gray-800 dark:text-white`} 
+            className={`transition-transform duration-200 transform hover:scale-110 fa-regular ${darkMode ? "fa-sun" : "fa-moon"} text-xl text-gray-800 dark:text-white`} 
             onClick={toggleColorMode} 
             style={{ cursor: "pointer" }}
           ></i>
