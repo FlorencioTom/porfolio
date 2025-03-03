@@ -18,15 +18,24 @@ const Nav = () => {
     };
 
     const toggleColorMode = () => {
-        if (darkMode) {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        } else {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        }
-        setDarkMode(!darkMode);
+      if (darkMode) {
+        // Si está en modo oscuro (dark), lo cambiamos a modo claro.
+        document.documentElement.classList.remove("dark");
+        document.documentElement.style.setProperty('--background', 'white');  // Establecer el fondo a blanco
+        document.documentElement.style.setProperty('--foreground', 'black');  // Establecer el texto a negro
+        localStorage.setItem("theme", "light");
+      } else {
+        // Si está en modo claro (light), lo cambiamos a modo oscuro.
+        document.documentElement.classList.add("dark");
+        document.documentElement.style.setProperty('--background', 'black');  // Establecer el fondo a negro
+        document.documentElement.style.setProperty('--foreground', 'white');  // Establecer el texto a blanco
+        localStorage.setItem("theme", "dark");
+      }
+    
+      // Actualizar el estado de darkMode
+      setDarkMode(!darkMode);
     };
+    
 
     return (
       <Navbar fluid rounded className={theme.root.base}>
