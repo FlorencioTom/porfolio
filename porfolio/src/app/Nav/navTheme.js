@@ -1,8 +1,8 @@
 export const theme = {
   root: {
-    base: 'bg-transparent px-10 py-2.5 dark:border-gray-700 dark:bg-transparent sm:px-4 xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mx-auto mt-5',
+    base: 'fixed z-30 bg-transparent px-10 py-2.5 dark:border-gray-700 dark:bg-transparent sm:px-4 xl:max-w-screen-xl lg:max-w-screen-lg md:max-w-screen-md sm:max-w-screen-sm mx-auto top-0 left-0 right-0',
     rounded: {
-      on: 'rounded',
+      on: '',
       off: ''
     },
     bordered: {
@@ -40,7 +40,7 @@ export const theme = {
     },
   },
   toggle: {
-    base: 'inline-flex items-center rounded-lg p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 md:hidden',
+    base: 'inline-flex items-center rounded p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 md:hidden',
     icon: 'h-6 w-6 shrink-0'
   }
 };

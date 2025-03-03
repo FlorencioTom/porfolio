@@ -13,7 +13,11 @@ const resources = {
       "availability":"Available to work",
       "aboutme":"Sobre mi",
       "profesion":"Front-End Web Developer",
-      "mailme":"Send Email"
+      "mailme":"Send Email",
+      "codingSkills":{
+        "text":"Competencias",
+        "underline":"digitales"
+      }
     }
   },
   es: {
@@ -27,7 +31,11 @@ const resources = {
       "profesion":"Desarrollador web Front-End",
       "description-intro":"apasionado por la creación de experiencias digitales intuitivas y atractivas. Si tienes un proyecto en mente o simplemente quieres conectar, ¡no dudes en contactarme!",
       "aboutme":"¡Hola! Soy Florencio, un desarrollador web junior apasionado por la creación de experiencias digitales intuitivas y atractivas. Si tienes un proyecto en mente o simplemente quieres conectar, ¡no dudes en contactarme!",
-      "mailme":"Enviar correo"
+      "mailme":"Enviar correo",
+      "codingSkills":{
+        "text":"Coding ",
+        "underline":" skills"
+      }
     }
   }
 };

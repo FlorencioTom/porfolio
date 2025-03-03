@@ -2,7 +2,7 @@
 import Link from "next/link";
 import { Navbar } from "flowbite-react";
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
 import {theme} from './navTheme'
 
@@ -11,6 +11,26 @@ const Nav = () => {
     const { t, i18n } = useTranslation();
     const [flag, setFlag] = useState(0);
     const [darkMode, setDarkMode] = useState(false);
+    const [isSticky, setIsSticky] = useState(false);
+
+    useEffect(() => {
+      const handleScroll = () => {
+        if (window.scrollY > 100) {
+          console.log(window.scrollY);
+          setIsSticky(true);
+        } else {
+          setIsSticky(false);
+        }
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+  
+      // Limpiar el evento al desmontar el componente
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, []);
+    
 
     const toggleLanguage = () => {
         i18n.changeLanguage(flag === 0 ? 'es' : 'en');
@@ -38,7 +58,7 @@ const Nav = () => {
     
 
     return (
-      <Navbar fluid rounded className={theme.root.base}>
+<Navbar fluid rounded  className={`backdrop-blur transition-all duration-300 ease-in-out ${theme.root.base} ${isSticky ? ' ' : ''}`}>
         <Navbar.Brand>
           <Image 
             className="mr-5 dark:text-white transition-transform duration-200 transform hover:scale-110"
