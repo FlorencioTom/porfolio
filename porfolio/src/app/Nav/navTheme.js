@@ -29,9 +29,9 @@ export const theme = {
     }
   },
   link: {
-    base: "hover:bg-transparent block py-2 pl-3 pr-4 md:p-0 cursor-pointer text-gray-800 dark:hover:text-yellow-500 hover:text-cyan-700 dark:hover:text-yellow-500 transition-all duration-300 border-b-2 border-cyan-500",
+    base: "block py-2 pl-3 pr-4 md:p-0 cursor-pointer text-gray-800 dark:text-white dark:hover:text-yellow-500 hover:text-cyan-700 dark:hover:text-yellow-500 transition-all duration-300 border-b-2 border-cyan-500",
     active: {
-      on: "bg-cyan-700 text-white dark:text-white md:bg-transparent md:text-cyan-700",
+      on: " text-white dark:text-white", 
       off: "",
     },
     disabled: {
@@ -40,7 +40,7 @@ export const theme = {
     },
   },
   toggle: {
-    base: 'inline-flex items-center rounded p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 md:hidden',
+    base: 'inline-flex items-center rounded p-2 text-sm text-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-white md:hidden',
     icon: 'h-6 w-6 shrink-0'
   }
 };

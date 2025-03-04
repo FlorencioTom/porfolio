@@ -1,10 +1,10 @@
 "use client"; 
-import Link from "next/link";
+
 import { Navbar } from "flowbite-react";
 import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useTranslation } from 'react-i18next';
-import {theme} from './navTheme'
+import {theme} from './navTheme';
 
 const Nav = () => {
 
@@ -12,6 +12,8 @@ const Nav = () => {
     const [flag, setFlag] = useState(0);
     const [darkMode, setDarkMode] = useState(false);
     const [isSticky, setIsSticky] = useState(false);
+    const [isClient, setIsClient] = useState(false);
+    const [miRoute, setMiRoute] = useState('');
 
     useEffect(() => {
       const handleScroll = () => {
@@ -30,7 +32,6 @@ const Nav = () => {
         window.removeEventListener('scroll', handleScroll);
       };
     }, []);
-    
 
     const toggleLanguage = () => {
         i18n.changeLanguage(flag === 0 ? 'es' : 'en');
@@ -51,14 +52,19 @@ const Nav = () => {
         document.documentElement.style.setProperty('--foreground', 'white');  // Establecer el texto a blanco
         localStorage.setItem("theme", "dark");
       }
-    
       // Actualizar el estado de darkMode
       setDarkMode(!darkMode);
     };
-    
+
+    const activeLink = (page) => {
+      if (page === "home") {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+      setMiRoute(page);
+    };
 
     return (
-<Navbar fluid rounded  className={`backdrop-blur transition-all duration-300 ease-in-out ${theme.root.base} ${isSticky ? ' ' : ''}`}>
+      <Navbar fluid rounded  className={`backdrop-blur transition-all duration-300 ease-in-out ${theme.root.base} ${isSticky ? ' ' : ''}`}>
         <Navbar.Brand>
           <Image 
             className="mr-5 dark:text-white transition-transform duration-200 transform hover:scale-110"
@@ -77,10 +83,11 @@ const Nav = () => {
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Navbar.Link href="#" className={theme.link.base}>{t('home')}</Navbar.Link>
-          <Navbar.Link href="#" className={theme.link.base}>{t('about')}</Navbar.Link>
-          <Navbar.Link href="#" className={theme.link.base}>{t('projects')}</Navbar.Link>
-          <Navbar.Link href="#" className={theme.link.base}>{t('contact')}</Navbar.Link>
+          <Navbar.Link active={miRoute === 'home'} onClick={() => activeLink('home')} className={theme.link.base}>{t('home')}</Navbar.Link>
+          <Navbar.Link href="#skills" active={miRoute === 'skills'} onClick={() => activeLink('skills')} className={theme.link.base}>{t('skills')}</Navbar.Link>
+          <Navbar.Link href="#projects" active={miRoute === 'projects'} onClick={() => activeLink('projects')} className={theme.link.base}>{t('projects')}</Navbar.Link>
+          <Navbar.Link href="#about" active={miRoute === 'about'} onClick={() => activeLink('about')} className={theme.link.base}>{t('about')}</Navbar.Link>
+          <Navbar.Link href="#contact" active={miRoute === 'contact'} onClick={() => activeLink('contact')} className={theme.link.base}>{t('contact')}</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     );

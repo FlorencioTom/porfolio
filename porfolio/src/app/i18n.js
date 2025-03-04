@@ -15,9 +15,16 @@ const resources = {
       "profesion":"Front-End Web Developer",
       "mailme":"Send Email",
       "codingSkills":{
-        "text":"Competencias",
-        "underline":"digitales"
-      }
+        "text":"Coding ",
+        "underline":" Skills"
+      },
+      
+      "pprojects":{
+        "text":"Personal",
+        "underline":" Projects"
+      },
+      "link":"Link",
+      "skills":"Skills"
     }
   },
   es: {
@@ -33,9 +40,15 @@ const resources = {
       "aboutme":"¡Hola! Soy Florencio, un desarrollador web junior apasionado por la creación de experiencias digitales intuitivas y atractivas. Si tienes un proyecto en mente o simplemente quieres conectar, ¡no dudes en contactarme!",
       "mailme":"Enviar correo",
       "codingSkills":{
-        "text":"Coding ",
-        "underline":" skills"
-      }
+        "text":"Competencias",
+        "underline":"digitales"
+      },
+      "pprojects":{
+        "text":"Proyectos",
+        "underline":""
+      },
+      "link":"Enlace",
+      "skills":"Habilidades"
     }
   }
 };
