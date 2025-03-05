@@ -43,14 +43,16 @@ export default function Intro() {
               {t('title-intro')}, <strong className="text-cyan-700 dark:text-yellow-500"> {t('profesion')} </strong> {t('description-intro')}
             </p>
             <div className="flex  justify-center">
-            <button type="button" className='mt-10 flex max-w-sm bg-gradient-to-r from-green-500 to-blue-500 focus:outline-none text-white text-base uppercase font-bold shadow-md rounded-full p-3 transition-all duration-300 hover:scale-110'>
-                <div className="flex sm:flex-cols-12 gap-2 items-center">
-                    <div className="col-span-1">
-                        <i className="fa-solid fa-envelope"></i>
-                    </div>
-                    <div className="col-span-2">{t('mailme')}</div>
-                </div>    
-            </button>
+              <a href="mailto:florenciotom@hotmail.com">
+                  <button type="button" className='mt-10 flex max-w-sm bg-gradient-to-r from-green-500 to-blue-500 focus:outline-none text-white text-base uppercase font-bold shadow-md rounded-full p-3 transition-all duration-300 hover:scale-110'>
+                      <div className="flex sm:flex-cols-12 gap-2 items-center">
+                          <div className="col-span-1">
+                              <i className="fa-solid fa-envelope"></i>
+                          </div>
+                          <div className="col-span-2">{t('mailme')}</div>
+                      </div>    
+                  </button>
+                </a>
             </div>
           </div>
         </div>
