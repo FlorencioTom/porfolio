@@ -25,90 +25,90 @@ export default function Lenguajes() {
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/react.svg"} width={50} height={50}  alt="react" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">React</div>
+                <div className="font-bold text-black text-xl dark:text-white">React</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/angular.svg"} width={50} height={50}  alt="angular" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">Angular</div>
+                <div className="font-bold text-black text-xl dark:text-white">Angular</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/javascript.svg"} width={50} height={50}  alt="javascript" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">Javascript</div>
+                <div className="font-bold  text-black  text-xl dark:text-white">Javascript</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/css.svg"} width={50} height={50}  alt="css" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">CSS</div>
+                <div className="font-bold text-black text-xl dark:text-white">CSS</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/html5.svg"} width={50} height={50}  alt="html5" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">HTML5</div>
+                <div className="font-bold text-black text-xl dark:text-white">HTML5</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/git.svg"} width={50} height={50}  alt="git" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0 flex gap-2 items-center">
                 <i className="fa-solid fa-star text-yellow-500"></i>
-                <div className="font-bold text-xl dark:text-white">GIT</div>
+                <div className="font-bold text-black text-xl dark:text-white">GIT</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/sass.svg"} width={50} height={50}  alt="sass" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">SASS</div>
+                <div className="font-bold text-black text-xl dark:text-white">SASS</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/tailwindcss.svg"} width={50} height={50}  alt="tailwind css" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">Tailwind CSS</div>
+                <div className="font-bold text-black text-xl dark:text-white">Tailwind CSS</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/wordpress.svg"} width={50} height={50}  alt="wordpress" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">Wordpress</div>
+                <div className="font-bold text-black text-xl dark:text-white">Wordpress</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/mysql.svg"} width={50} height={50}  alt="sql" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">SQL</div>
+                <div className="font-bold text-black text-xl dark:text-white">SQL</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110 phpcolor" src={"/Php_dark.svg"} width={50} height={50} alt="php" style={{height:'100px', width:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">PHP</div>
+                <div className="font-bold text-black text-xl dark:text-white">PHP</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110 "  src={"/nodejs.svg"} width={50} height={50}  alt="nodejs" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">Node JS</div>
+                <div className="font-bold text-black text-xl dark:text-white">Node JS</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/mongodb.svg"} width={50} height={50}  alt="mongo" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">MONGO</div>
+                <div className="font-bold text-black text-xl dark:text-white">MONGO</div>
                 </div>
             </div>
             <div className="max-w-sm rounded overflow-hidden hover:shadow-lg hover:bg-gray-200 px-0 py-2 flex flex-col items-center justify-start dark:bg-transparent transition-all duration-300 ease-in-out cursor-pointer">
                 <Image className="w-full transition-transform duration-200 ease-in-out dark:hover:scale-110"  src={"/java.svg"} width={50} height={50}  alt="java" style={{height:'100px'}} />
                 <div className="px-6 py-2 pb-0">
-                <div className="font-bold text-xl dark:text-white">Java</div>
+                <div className="font-bold text-black text-xl dark:text-white">Java</div>
                 </div>
             </div>
             </div>
