@@ -20,7 +20,7 @@ export default function Intro() {
                     onClick={() => { setShake(true); setTimeout(() => setShake(false), 300); }}/>
             </div>
             <div className="flex flex-col items-start justify-start text-left py-4">
-              <h1 className="dark:text-white text-3xl font-semibold mb-3 ml-8">{t('title-intro')}</h1>
+              <h1 className="dark:text-white text-black text-3xl font-semibold mb-3 ml-8">{t('title-intro')}</h1>
               <a href="https://www.linkedin.com/in/florencio-tom-4496a3198/" target="_blank" rel="noopener" 
                 className="flex items-center justify-start transition transform hover:scale-105 ml-8"> 
                 <div className="flex items-center"> 
