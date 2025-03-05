@@ -35,7 +35,7 @@ export const jsonProjects = [
             "/got-4.png",
         ],
         "tags":"React",
-        "link":"https://got-dusky.vercel.app/cronologia"
+        "link":"https://got-dusky.vercel.app/"
     },
     {
         "title":"Quien es Quien",

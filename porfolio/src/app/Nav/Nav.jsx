@@ -18,7 +18,6 @@ const Nav = () => {
     useEffect(() => {
       const handleScroll = () => {
         if (window.scrollY > 100) {
-          console.log(window.scrollY);
           setIsSticky(true);
         } else {
           setIsSticky(false);
@@ -41,13 +40,15 @@ const Nav = () => {
     const toggleColorMode = () => {
       if (darkMode) {
         // Si está en modo oscuro (dark), lo cambiamos a modo claro.
-        document.documentElement.classList.remove("dark");
+        document.documentElement.className = "light"; // O "dark"
+
         document.documentElement.style.setProperty('--background', 'white');  // Establecer el fondo a blanco
         document.documentElement.style.setProperty('--foreground', 'black');  // Establecer el texto a negro
         localStorage.setItem("theme", "light");
       } else {
         // Si está en modo claro (light), lo cambiamos a modo oscuro.
-        document.documentElement.classList.add("dark");
+        document.documentElement.className = "dark"; // O "dark"
+
         document.documentElement.style.setProperty('--background', 'black');  // Establecer el fondo a negro
         document.documentElement.style.setProperty('--foreground', 'white');  // Establecer el texto a blanco
         localStorage.setItem("theme", "dark");
@@ -86,7 +87,6 @@ const Nav = () => {
           <Navbar.Link active={miRoute === 'home'} onClick={() => activeLink('home')} className={theme.link.base}>{t('home')}</Navbar.Link>
           <Navbar.Link href="#skills" active={miRoute === 'skills'} onClick={() => activeLink('skills')} className={theme.link.base}>{t('skills')}</Navbar.Link>
           <Navbar.Link href="#projects" active={miRoute === 'projects'} onClick={() => activeLink('projects')} className={theme.link.base}>{t('projects')}</Navbar.Link>
-          <Navbar.Link href="#contact" active={miRoute === 'contact'} onClick={() => activeLink('contact')} className={theme.link.base}>{t('contact')}</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>
     );

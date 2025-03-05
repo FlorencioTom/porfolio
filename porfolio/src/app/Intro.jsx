@@ -44,11 +44,11 @@ export default function Intro() {
             </p>
             <div className="flex  justify-center">
             <button type="button" className='mt-10 flex max-w-sm bg-gradient-to-r from-green-500 to-blue-500 focus:outline-none text-white text-base uppercase font-bold shadow-md rounded-full p-3 transition-all duration-300 hover:scale-110'>
-                <div class="flex sm:flex-cols-12 gap-2 items-center">
-                    <div class="col-span-1">
-                        <i class="fa-solid fa-envelope"></i>
+                <div className="flex sm:flex-cols-12 gap-2 items-center">
+                    <div className="col-span-1">
+                        <i className="fa-solid fa-envelope"></i>
                     </div>
-                    <div class="col-span-2">{t('mailme')}</div>
+                    <div className="col-span-2">{t('mailme')}</div>
                 </div>    
             </button>
             </div>
