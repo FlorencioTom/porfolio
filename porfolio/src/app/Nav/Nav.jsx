@@ -86,7 +86,6 @@ const Nav = () => {
           <Navbar.Link active={miRoute === 'home'} onClick={() => activeLink('home')} className={theme.link.base}>{t('home')}</Navbar.Link>
           <Navbar.Link href="#skills" active={miRoute === 'skills'} onClick={() => activeLink('skills')} className={theme.link.base}>{t('skills')}</Navbar.Link>
           <Navbar.Link href="#projects" active={miRoute === 'projects'} onClick={() => activeLink('projects')} className={theme.link.base}>{t('projects')}</Navbar.Link>
-          <Navbar.Link href="#about" active={miRoute === 'about'} onClick={() => activeLink('about')} className={theme.link.base}>{t('about')}</Navbar.Link>
           <Navbar.Link href="#contact" active={miRoute === 'contact'} onClick={() => activeLink('contact')} className={theme.link.base}>{t('contact')}</Navbar.Link>
         </Navbar.Collapse>
       </Navbar>

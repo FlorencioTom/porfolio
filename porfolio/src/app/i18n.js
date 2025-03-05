@@ -24,7 +24,9 @@ const resources = {
         "underline":" Projects"
       },
       "link":"Link",
-      "skills":"Skills"
+      "skills":"Skills",
+      "finalText":"For more information, contact or connect with me.",
+      "right":"All rights reserved."
     }
   },
   es: {
@@ -48,7 +50,9 @@ const resources = {
         "underline":""
       },
       "link":"Enlace",
-      "skills":"Habilidades"
+      "skills":"Habilidades",
+      "finalText":"Para mas informacion contacta o conecta conmigo",
+      "right":"Todos los derechos reservados"
     }
   }
 };
